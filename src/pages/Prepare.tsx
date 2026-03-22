@@ -8,7 +8,7 @@ import {
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '' : 'http://localhost:3001');
 
 interface Topic {
   name: string;

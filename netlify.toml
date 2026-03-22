@@ -1,0 +1,32 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/generate-questions"
+  to = "/.netlify/functions/generate-questions"
+  status = 200
+
+[[redirects]]
+  from = "/api/evaluate-answer"
+  to = "/.netlify/functions/evaluate-answer"
+  status = 200
+
+[[redirects]]
+  from = "/api/generate-preparation"
+  to = "/.netlify/functions/generate-preparation"
+  status = 200
+
+[[redirects]]
+  from = "/api/generate-learning-path"
+  to = "/.netlify/functions/generate-learning-path"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
