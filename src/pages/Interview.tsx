@@ -101,7 +101,7 @@ const Interview: React.FC = () => {
   // Redirect if no questions
   useEffect(() => {
     if (questions.length === 0) {
-      navigate('/');
+      navigate('/home');
     }
   }, [questions, navigate]);
 

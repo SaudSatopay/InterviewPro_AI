@@ -116,7 +116,7 @@ const History: React.FC = () => {
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
-              to="/"
+              to="/home"
               className="btn-neon inline-flex items-center gap-2 text-sm"
             >
               <Sparkles size={14} />
@@ -258,7 +258,7 @@ const History: React.FC = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Link
-              to="/"
+              to="/home"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium
                 bg-dark-600 text-slate-300 border border-white/5 hover:bg-dark-500 hover:text-white transition-all"
             >

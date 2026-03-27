@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-          <Link to={isAuthenticated ? '/' : '/login'} className="flex items-center gap-3 group">
+          <Link to={isAuthenticated ? '/home' : '/'} className="flex items-center gap-3 group">
             <div className="relative">
               <GraduationCap size={30} className="text-neon-cyan" />
               <div className="absolute inset-0 bg-neon-cyan/20 blur-lg rounded-full group-hover:bg-neon-cyan/30 transition-all" />

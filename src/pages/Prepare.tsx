@@ -632,7 +632,7 @@ const Prepare: React.FC = () => {
           >
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
               <Link
-                to="/"
+                to="/home"
                 className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium
                   bg-dark-600 text-slate-300 border border-white/5
                   hover:bg-dark-500 hover:border-white/10 transition-all duration-200"
@@ -981,7 +981,7 @@ const Prepare: React.FC = () => {
           >
             <motion.div className="inline-block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                to="/"
+                to="/home"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium
                   bg-dark-600 text-slate-300 border border-white/5 hover:bg-dark-500 hover:text-white transition-all"
               >
